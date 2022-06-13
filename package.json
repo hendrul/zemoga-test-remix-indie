@@ -40,7 +40,6 @@
     "tiny-invariant": "^1.2.0"
   },
   "devDependencies": {
-    "@faker-js/faker": "^6.3.1",
     "@remix-run/dev": "^1.5.1",
     "@remix-run/eslint-config": "^1.5.1",
     "@testing-library/cypress": "^8.0.3",
@@ -48,7 +47,6 @@
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^12.1.5",
     "@testing-library/user-event": "^14.2.0",
-    "@types/bcryptjs": "^2.4.2",
     "@types/eslint": "^8.4.3",
     "@types/node": "^17.0.41",
     "@types/react": "^17.0.45",
