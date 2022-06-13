@@ -14,8 +14,6 @@ export function getVote({
 
 export function getVoteList() {
   return prisma.vote.findMany({
-    where: {},
-    select: {},
     orderBy: { updatedAt: "desc" },
   });
 }
