@@ -14,7 +14,6 @@ import {
 } from "@remix-run/react";
 
 import tailwindStylesheetUrl from "./styles/tailwind.css";
-import { getUser } from "./session.server";
 
 export const links: LinksFunction = () => {
   return [
@@ -33,16 +32,6 @@ export const meta: MetaFunction = () => ({
   viewport: "width=device-width,initial-scale=1",
   "X-UA-Compatible": "ie=edge",
 });
-
-type LoaderData = {
-  user: Awaited<ReturnType<typeof getUser>>;
-};
-
-export const loader: LoaderFunction = async ({ request }) => {
-  return json<LoaderData>({
-    user: await getUser(request),
-  });
-};
 
 export default function App() {
   return (
