@@ -37,7 +37,7 @@ tasks:
         fi
       fi
 
-  - init: yarn install
+  - init: volta pin yarn && yarn install
     command: yarn setup && yarn dev
 
 vscode:

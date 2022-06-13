@@ -17,9 +17,13 @@ export const loader: LoaderFunction = async () => {
 export default function Index() {
   const { voteList } = useLoaderData() as LoaderData;
   return (
-    <div>
+    <div className="flex overflow-hidden">
       {voteList.map((vote) => (
-        <VoteCard key={vote.id} vote={vote} />
+        <VoteCard
+          key={vote.id}
+          className="max-h-72 shrink-0 grow-0 basis-72"
+          vote={vote}
+        />
       ))}
     </div>
   );
