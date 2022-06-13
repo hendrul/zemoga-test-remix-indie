@@ -1,4 +1,4 @@
-app = "remix-app-9aac"
+app = "zemoga-test-remix-indie-9aac"
 kill_signal = "SIGINT"
 kill_timeout = 5
 processes = [ ]
